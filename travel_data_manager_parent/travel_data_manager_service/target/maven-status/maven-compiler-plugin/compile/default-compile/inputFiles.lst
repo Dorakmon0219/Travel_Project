@@ -4,8 +4,10 @@ D:\kkk\Java\JavaProject\Travel_Project\travel_data_manager_parent\travel_data_ma
 D:\kkk\Java\JavaProject\Travel_Project\travel_data_manager_parent\travel_data_manager_service\src\main\java\com\qianfeng\service\impl\OrderServiceImpl.java
 D:\kkk\Java\JavaProject\Travel_Project\travel_data_manager_parent\travel_data_manager_service\src\main\java\com\qianfeng\service\IProductService.java
 D:\kkk\Java\JavaProject\Travel_Project\travel_data_manager_parent\travel_data_manager_service\src\main\java\com\qianfeng\service\impl\PermissionServiceImpl.java
+D:\kkk\Java\JavaProject\Travel_Project\travel_data_manager_parent\travel_data_manager_service\src\main\java\com\qianfeng\service\impl\HotelInfoImpl.java
 D:\kkk\Java\JavaProject\Travel_Project\travel_data_manager_parent\travel_data_manager_service\src\main\java\com\qianfeng\service\impl\ProductServiceImpl.java
 D:\kkk\Java\JavaProject\Travel_Project\travel_data_manager_parent\travel_data_manager_service\src\main\java\com\qianfeng\service\IOrderService.java
+D:\kkk\Java\JavaProject\Travel_Project\travel_data_manager_parent\travel_data_manager_service\src\main\java\com\qianfeng\service\IHotelInfoService.java
 D:\kkk\Java\JavaProject\Travel_Project\travel_data_manager_parent\travel_data_manager_service\src\main\java\com\qianfeng\service\impl\RoleServiceImpl.java
 D:\kkk\Java\JavaProject\Travel_Project\travel_data_manager_parent\travel_data_manager_service\src\main\java\com\qianfeng\service\IUserInfoService.java
 D:\kkk\Java\JavaProject\Travel_Project\travel_data_manager_parent\travel_data_manager_service\src\main\java\com\qianfeng\service\IPermissionService.java

@@ -87,7 +87,7 @@
                 <li><a href="${pageContext.request.contextPath}/index.jsp"><i
                         class="fa fa-dashboard"></i> 首页</a></li>
                 <li><a
-                        href="${pageContext.request.contextPath}/product/findAll.do">酒店管理</a></li>
+                        href="${pageContext.request.contextPath}/hotel/findAll">酒店管理</a></li>
                 <li class="active">酒店表单</li>
             </ol>
         </section>
@@ -116,15 +116,9 @@
                         </div>
                         <div class="col-md-2 title">地址</div>
                         <div class="col-md-4 data">
-                            <div class="input-group date">
-                                <div class="input-group-addon">
-                                    <i class="fa fa-calendar"></i>
-                                </div>
-                                <input type="text" class="form-control pull-right"
-                                       id="datepicker-a3" name="departureTime" value="${requestScope.hotel.address}">
-                            </div>
+                            <input type="text" class="form-control" name="address"
+                                   placeholder="地址" value="${requestScope.hotel.address}">
                         </div>
-
 
                         <div class="col-md-2 title">联系电话</div>
                         <div class="col-md-4 data">
@@ -134,8 +128,8 @@
 
                         <div class="col-md-2 title">联系人</div>
                         <div class="col-md-4 data">
-                            <input type="text" class="form-control" name="conctater"
-                                   placeholder="联系人" value="${requestScope.hotel.conctater}">
+                            <input type="text" class="form-control" name="contacter"
+                                   placeholder="联系人" value="${requestScope.hotel.contacter}">
                         </div>
 
                         <div class="col-md-2 title">酒店价格</div>
@@ -144,14 +138,10 @@
                                    name="price" value="${requestScope.hotel.price}">
                         </div>
 
-
-
-                        <div class="col-md-2 title rowHeight2x">类型</div>
-                        <div class="col-md-10 data rowHeight2x">
-							<textarea class="form-control" rows="3" placeholder="类型"
-                                      name="hotelType" >
-                                ${requestScope.hotel.hotelType}
-                            </textarea>
+                        <div class="col-md-2 title ">类型</div>
+                        <div class="col-md-4 data ">
+                            <input type="text" class="form-control" placeholder="类型"
+                                     name="hotelType" value="${requestScope.hotel.hotelType}">
                         </div>
 
                     </div>

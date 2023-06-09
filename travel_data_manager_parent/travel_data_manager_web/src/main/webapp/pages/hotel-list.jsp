@@ -211,7 +211,7 @@
                             </div>
                         </div>
                         <!--工具栏/-->
-                        <form action="/product/deleteIds" method="post" id="delForm">
+                        <form action="/hotel/deleteIds" method="post" id="delForm">
                             <!--酒店列表-->
                             <table id="dataList"
                                    class="table table-bordered table-striped table-hover dataTable">
@@ -234,12 +234,12 @@
                                 <tbody>
 
                                 <%--复选框天生就具备被提交的功能--%>
-                                <c:forEach items="${hotelList.list}" var="hotel">
+                                <c:forEach items="${hotelList}" var="hotel">
 
 
                                     <tr>
-                                        <td><input name="ids" type="checkbox" value="${hotel.id}"></td>
-                                        <td>${hotel.id }</td>
+                                        <td><input name="ids" type="checkbox" value="${hotel.hotelId}"></td>
+                                        <td>${hotel.hotelId }</td>
                                         <td>${hotel.hotelName }</td>
                                         <td>${hotel.address }</td>
                                         <td>${hotel.phoneNum }</td>
@@ -247,9 +247,8 @@
                                         <td>${hotel.price }</td>
                                         <td>${hotel.hotelType }</td>
                                         <td class="text-center">
-                                            <button type="button" class="btn bg-olive btn-xs">订单</button>
                                             <button type="button" class="btn bg-olive btn-xs">详情</button>
-                                            <a href="/hotel/findById?id=${hotel.id}" class="btn bg-olive btn-xs">编辑</a>
+                                            <a href="/hotel/findById?id=${hotel.hotelId}" class="btn bg-olive btn-xs">编辑</a>
 
                                         </td>
                                     </tr>
@@ -549,7 +548,6 @@
     });
     //绑定删除按钮
     $("#del").click(function () {
-        //alert("haha");
         //1.获取所有的复选框 判断复选框的状态是否为选中
         var chs = document.getElementsByName("ids");
         var flag = false;//标记

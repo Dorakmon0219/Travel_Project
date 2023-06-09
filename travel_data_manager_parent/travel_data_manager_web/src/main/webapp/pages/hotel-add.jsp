@@ -85,7 +85,7 @@
                 <li><a href="${pageContext.request.contextPath}/index.jsp"><i
                         class="fa fa-dashboard"></i> 首页</a></li>
                 <li><a
-                        href="${pageContext.request.contextPath}/hotel/findAll.do">酒店管理</a></li>
+                        href="${pageContext.request.contextPath}/hotel/findAll">酒店管理</a></li>
                 <li class="active">酒店表单</li>
             </ol>
         </section>
@@ -99,6 +99,12 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">酒店信息</div>
                     <div class="row data-type">
+
+                        <div class="col-md-2 title">酒店编号</div>
+                        <div class="col-md-4 data">
+                            <input type="text" class="form-control" name="hotelId"
+                                   placeholder="酒店编号" value="">
+                        </div>
 
                         <div class="col-md-2 title">酒店名称</div>
                         <div class="col-md-4 data">
@@ -120,7 +126,7 @@
 
                         <div class="col-md-2 title">联系人</div>
                         <div class="col-md-4 data">
-                            <input type="text" class="form-control" name="contactor"
+                            <input type="text" class="form-control" name="contacter"
                                    placeholder="联系人" value="">
                         </div>
 

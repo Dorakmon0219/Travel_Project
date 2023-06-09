@@ -1,10 +1,12 @@
 com\qianfeng\service\impl\test.class
 com\qianfeng\service\IProductService.class
 com\qianfeng\service\IUserInfoService.class
+com\qianfeng\service\impl\HotelInfoImpl.class
 com\qianfeng\service\impl\OrderServiceImpl.class
 com\qianfeng\service\impl\SysLogServiceImpl.class
 com\qianfeng\service\IRoleService.class
 com\qianfeng\service\IPermissionService.class
+com\qianfeng\service\IHotelInfoService.class
 com\qianfeng\service\impl\ProductServiceImpl.class
 com\qianfeng\service\impl\UserInfoImpl.class
 com\qianfeng\service\ISysLogService.class

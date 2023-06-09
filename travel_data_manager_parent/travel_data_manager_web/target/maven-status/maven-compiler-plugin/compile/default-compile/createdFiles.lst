@@ -1,4 +1,5 @@
 com\qianfeng\controller\UserInfoController.class
+com\qianfeng\controller\HotelInfoController.class
 com\qianfeng\controller\PermissionController.class
 com\qianfeng\controller\OrderController.class
 com\qianfeng\controller\RoleController.class

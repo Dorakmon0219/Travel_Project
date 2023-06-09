@@ -3,6 +3,7 @@ com\qianfeng\dao\IUserInfoDao.class
 com\qianfeng\dao\IPermissionDao.class
 com\qianfeng\dao\ISysLogDao.class
 com\qianfeng\dao\IRoleDao.class
+com\qianfeng\dao\IHotelInfoDao.class
 com\qianfeng\dao\IMemberDao.class
 com\qianfeng\dao\ITravellersDao.class
 com\qianfeng\dao\IProductDao.class
