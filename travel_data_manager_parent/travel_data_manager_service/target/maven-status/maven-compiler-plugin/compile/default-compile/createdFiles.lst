@@ -1,4 +1,6 @@
 com\qianfeng\service\impl\test.class
+com\qianfeng\service\ITravelTipService.class
+com\qianfeng\service\impl\TravelTipServiceImpl.class
 com\qianfeng\service\IProductService.class
 com\qianfeng\service\IUserInfoService.class
 com\qianfeng\service\impl\HotelInfoImpl.class

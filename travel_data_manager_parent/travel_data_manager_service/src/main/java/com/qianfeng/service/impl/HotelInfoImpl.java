@@ -1,7 +1,10 @@
 package com.qianfeng.service.impl;
 
+import com.github.pagehelper.PageHelper;
 import com.qianfeng.dao.IHotelInfoDao;
+import com.qianfeng.dao.IPermissionDao;
 import com.qianfeng.domain.HotelInfo;
+import com.qianfeng.domain.Product;
 import com.qianfeng.service.IHotelInfoService;
 import org.springframework.stereotype.Service;
 
@@ -13,11 +16,7 @@ public class HotelInfoImpl implements IHotelInfoService {
     @Resource
     private IHotelInfoDao hotelInfoDao;
 
-    @Override
-    public List<HotelInfo> findAll() {
-        List<HotelInfo> hotelList = hotelInfoDao.findAll();
-        return hotelList;
-    }
+
 
     @Override
     public void save(HotelInfo hotelInfo) {
@@ -40,5 +39,12 @@ public class HotelInfoImpl implements IHotelInfoService {
     @Override
     public void update(HotelInfo hotelInfo) {
         hotelInfoDao.update(hotelInfo);
+    }
+
+    @Override
+    public List<HotelInfo> findAll(Integer page, Integer pageSize) {
+        PageHelper.startPage(page, pageSize);//导包，帮助我们在sql上拼接limit语句
+        List<HotelInfo> hotelInfoList = hotelInfoDao.findAll();
+        return hotelInfoList;
     }
 }

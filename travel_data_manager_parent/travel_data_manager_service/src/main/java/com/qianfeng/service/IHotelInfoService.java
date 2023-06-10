@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface IHotelInfoService {
 
-    List<HotelInfo> findAll();
+
 
     void save(HotelInfo hotelInfo);
 
@@ -15,4 +15,6 @@ public interface IHotelInfoService {
     HotelInfo findById(String id);
 
     void update(HotelInfo hotelInfo);
+
+    List<HotelInfo> findAll(Integer page, Integer pageSize);
 }

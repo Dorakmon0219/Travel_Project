@@ -1,12 +1,16 @@
 package com.qianfeng.controller;
 
+import com.github.pagehelper.PageInfo;
 import com.qianfeng.domain.HotelInfo;
+import com.qianfeng.domain.Orders;
 import com.qianfeng.service.IHotelInfoService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
+import javax.jws.WebParam;
 import java.util.List;
 
 @Controller
@@ -15,15 +19,17 @@ public class HotelInfoController {
 
     @Resource
     private IHotelInfoService hotelInfoService;
+
     @RequestMapping("/findAll")
-    public ModelAndView findAll(){
+    public ModelAndView findAll(@RequestParam(defaultValue = "1",name = "page") Integer page, @RequestParam(defaultValue = "5",name = "pageSize")Integer pageSize){
         ModelAndView mav = new ModelAndView();
-        List<HotelInfo> hotelList = hotelInfoService.findAll();
-        mav.addObject("hotelList", hotelList);
+        List<HotelInfo> hotelInfoList = hotelInfoService.findAll(page,pageSize);
+        PageInfo<HotelInfo> pageInfo = new PageInfo<>(hotelInfoList);
+        mav.addObject("pageInfo",pageInfo);
         mav.setViewName("hotel-list");
         return mav;
     }
-
+    ////
     @RequestMapping("/save")
     public String save(HotelInfo hotelInfo){
         hotelInfoService.save(hotelInfo);

@@ -13,7 +13,7 @@ import java.util.List;
 public interface IHotelInfoDao {
 
     @Select("select * from hotel_info")
-    List<HotelInfo> findAll();
+    public List<HotelInfo> findAll();
 
     @Insert("insert into hotel_info(hotelId,hotelName,address,phoneNum,contacter,price,hotelType) values(#{hotelId},#{hotelName},#{address},#{phoneNum},#{contacter},#{price},#{hotelType})")
     void save(HotelInfo hotelInfo);
@@ -26,4 +26,6 @@ public interface IHotelInfoDao {
 
     @Update("update hotel_info set hotelName = #{hotelName}, address = #{address}, phoneNum = #{phoneNum}, contacter = #{contacter}, price = #{price}, hotelType = #{hotelType} where hotelId = #{hotelId}")
     void update(HotelInfo hotelInfo);
+
+
 }

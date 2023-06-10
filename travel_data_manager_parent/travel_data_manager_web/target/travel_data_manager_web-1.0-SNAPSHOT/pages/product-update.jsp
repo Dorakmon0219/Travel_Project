@@ -107,7 +107,7 @@
 						<div class="col-md-2 title">产品编号</div>
 						<div class="col-md-4 data">
 							<input type="text" class="form-control" name="productNum"
-								placeholder="产品编号" value="${requestScope.product.productNum}">
+								placeholder="产品编号" value="${requestScope.product.productNum}" readonly>
 						</div>
 						<div class="col-md-2 title">产品名称</div>
 						<div class="col-md-4 data">

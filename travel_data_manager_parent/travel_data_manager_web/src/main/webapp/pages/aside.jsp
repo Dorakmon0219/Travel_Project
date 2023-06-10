@@ -86,7 +86,7 @@
                 <ul class="treeview-menu">
 
                     <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/traveltip/findAll">
+                            href="${pageContext.request.contextPath}/travelTips/findAll">
                         <i class="fa fa-circle-o"></i> 攻略管理
                     </a></li>
                     <li id="system-setting"><a
@@ -98,8 +98,6 @@
             </li>
 
 
-
-
             <li class="treeview"><a href="#"> <i class="fa fa-cube"></i>
                 <span>信息统计</span> <span class="pull-right-container"> <i
                         class="fa fa-angle-left pull-right"></i>
@@ -108,11 +106,11 @@
                 <ul class="treeview-menu">
 
                     <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/city/findAll">
+                            href="${pageContext.request.contextPath}/cityStatistics/findAll">
                         <i class="fa fa-circle-o"></i> 城市
                     </a></li>
                     <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/price/findAll">
+                            href="${pageContext.request.contextPath}/priceStatistics/show">
                         <i class="fa fa-circle-o"></i> 价格区间
                     </a></li>
 

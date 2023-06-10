@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" isELIgnored="false" %>
-<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
+<%@taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
@@ -34,10 +34,14 @@
             </a>
                 <ul class="treeview-menu">
 
-                    <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/user/findAll"> <i
-                            class="fa fa-circle-o"></i> 用户管理
-                    </a></li>
+<%--                    <security:authorize access="hasRole('vip')">--%>
+                        <li id="system-setting"><a
+                                href="${pageContext.request.contextPath}/user/findAll"> <i
+                                class="fa fa-circle-o"></i> 用户管理
+                        </a></li>
+<%--                    </security:authorize>--%>
+
+
                     <li id="system-setting"><a
                             href="${pageContext.request.contextPath}/role/findAll"> <i
                             class="fa fa-circle-o"></i> 角色管理
@@ -52,6 +56,8 @@
                     </a></li>
                 </ul>
             </li>
+
+
             <li class="treeview"><a href="#"> <i class="fa fa-cube"></i>
                 <span>基础数据</span> <span class="pull-right-container"> <i
                         class="fa fa-angle-left pull-right"></i>
@@ -64,8 +70,48 @@
                         <i class="fa fa-circle-o"></i> 产品管理
                     </a></li>
                     <li id="system-setting"><a
-                            href="${pageContext.request.contextPath}/orders/findAll?page=1&pageSize=5"> <i
+                            href="${pageContext.request.contextPath}/orders/findAll?page=1&pageSize=3"> <i
                             class="fa fa-circle-o"></i> 订单管理
+                    </a></li>
+
+                </ul>
+            </li>
+
+
+            <li class="treeview"><a href="#"> <i class="fa fa-cube"></i>
+                <span>旅游信息管理</span> <span class="pull-right-container"> <i
+                        class="fa fa-angle-left pull-right"></i>
+				</span>
+            </a>
+                <ul class="treeview-menu">
+
+                    <li id="system-setting"><a
+                            href="${pageContext.request.contextPath}/travelTips/findAll">
+                        <i class="fa fa-circle-o"></i> 攻略管理
+                    </a></li>
+                    <li id="system-setting"><a
+                            href="${pageContext.request.contextPath}/hotel/findAll">
+                        <i class="fa fa-circle-o"></i> 旅店信息管理
+                    </a></li>
+
+                </ul>
+            </li>
+
+
+            <li class="treeview"><a href="#"> <i class="fa fa-cube"></i>
+                <span>信息统计</span> <span class="pull-right-container"> <i
+                        class="fa fa-angle-left pull-right"></i>
+				</span>
+            </a>
+                <ul class="treeview-menu">
+
+                    <li id="system-setting"><a
+                            href="${pageContext.request.contextPath}/cityStatistics/findAll">
+                        <i class="fa fa-circle-o"></i> 城市
+                    </a></li>
+                    <li id="system-setting"><a
+                            href="${pageContext.request.contextPath}/priceStatistics/show">
+                        <i class="fa fa-circle-o"></i> 价格区间
                     </a></li>
 
                 </ul>

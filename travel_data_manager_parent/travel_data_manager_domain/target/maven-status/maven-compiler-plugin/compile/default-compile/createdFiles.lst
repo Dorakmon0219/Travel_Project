@@ -1,4 +1,5 @@
 com\qianfeng\domain\Role.class
+com\qianfeng\domain\TravelTip.class
 com\qianfeng\domain\Orders.class
 com\qianfeng\domain\Permission.class
 com\qianfeng\domain\Product.class
